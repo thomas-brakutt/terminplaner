@@ -10,7 +10,15 @@ addTerminButton.addEventListener("click", function () {
   }
 
   const newElement = document.createElement("li");
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Löschen";
+
   newElement.textContent = termin;
   terminList.append(newElement);
   terminInput.value = "";
+  newElement.appendChild(deleteButton);
+
+  deleteButton.addEventListener("click", function () {
+    newElement.remove();
+  });
 });
