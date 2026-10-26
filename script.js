@@ -14,9 +14,10 @@ addTerminButton.addEventListener("click", function () {
   deleteButton.textContent = "Löschen";
 
   newElement.textContent = termin;
+  newElement.appendChild(deleteButton);
   terminList.append(newElement);
   terminInput.value = "";
-  newElement.appendChild(deleteButton);
+  
 
   deleteButton.addEventListener("click", function () {
     newElement.remove();
