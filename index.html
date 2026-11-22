@@ -13,8 +13,16 @@
     <h1>Terminplaner</h1>
     <h2>Neue Termine</h2>
     <form id="appointmentForm">
+
+        <label for="dateInput">Datum:</label>
+        <input type="date" id="dateInput" required>
+
+        <label for="timeInput">Uhrzeit:</label>
+        <input type="time" id="timeInput" required>
+
         <label for="terminInput">Termintitel:</label>
-        <input type="text" id="terminInput">
+        <input type="text" id="terminInput" required>
+
         <button id="addTerminButton" type="submit">
             Termin hinzufügen
         </button>
